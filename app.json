@@ -20,6 +20,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow the app to use the camera to photograph visible stall conditions as inspection evidence. Photos stay on this device and are never uploaded or shared."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow the app to choose visible stall-condition photos from your gallery. Photos stay on this device and are never uploaded or shared."
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
